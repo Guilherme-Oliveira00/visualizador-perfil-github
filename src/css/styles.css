@@ -144,3 +144,55 @@ main {
 .container .profile-results.hide {
   display: none;
 }
+
+.profile-results {
+  width: 100%;
+}
+
+.loading {
+  padding: var(--spacing-xl) 0;
+  color: var(--muted-foreground);
+  font-size: var(--font-sm);
+  text-align: center;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2xl);
+  width: 100%;
+  padding: var(--spacing-2xl) var(--spacing-md);
+  text-align: left;
+}
+
+.profile-avatar {
+  width: 8rem;
+  height: 8rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+ 
+}
+
+.profile-info h2 {
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-lg);
+}
+
+.profile-info p {
+  color: var(--muted-foreground);
+  font-size: var(--font-sm);
+}
+
+@media (max-width: 425px) {
+  .profile-card {
+    gap: var(--spacing-md);
+    padding: var(--spacing-xl) var(--spacing-xs);
+  }
+
+  .profile-avatar {
+    width: 6rem;
+    height: 6rem;
+  }
+}
