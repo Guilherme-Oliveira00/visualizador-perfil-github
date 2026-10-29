@@ -11,7 +11,8 @@
     font-size: var(--font-xl);
   }
   
-  .repositories ul {
+  .repositories ul,
+  .repositories-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -27,7 +28,8 @@
     max-width: 100%;
   }
   
-  .repositories ul { 
+  .repositories ul,
+  .repositories-list { 
     grid-template-columns: 1fr; 
   }
   
