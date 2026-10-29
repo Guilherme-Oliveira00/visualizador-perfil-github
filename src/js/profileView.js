@@ -22,7 +22,7 @@ const repositoriesHTML = userRepos.length > 0 ? userRepos.map(repo =>
     userData.name
   }" class="profile-avatar">
       <div class="profile-info">
-        <h2>${userData.name}</h2>
+        <h2>${userData.name || "Nome não encontrado 😢"}</h2>
         <p>${userData.bio || "Não possui bio cadastrada 😢."}</p>
       </div>
     </div>
